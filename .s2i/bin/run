@@ -1,0 +1,10 @@
+#!/bin/bash
+# Runs the assembled artifacts.
+
+echo "running pre-run hook..."
+# hook script
+cat /wildfly/standalone/configuration/standalone.xml
+echo "...pre-run hook done"
+
+# Execute the default S2I script
+exec /usr/libexec/s2i/run
