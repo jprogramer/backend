@@ -1,12 +1,10 @@
-# THIS IS ONLY FOR THE gitattributes REPOSITORY.
-# Handle line endings automatically for files detected as text
-# and leave all files detected as binary untouched.
+### THIS IS ONLY FOR THE gitattributes REPOSITORY.
+### Handle line endings automatically for files detected as text
+### and leave all files detected as binary untouched.
 * text=auto
 
-#
-# The above will handle all files NOT found below
-#
-# These files are text and should be normalized (Convert crlf => lf)
+### These extentions are for text files
+### and should be normalized (Convert crlf => lf)
 *.gitattributes text
 *.gitignore text
 *.md text
@@ -23,6 +21,8 @@
 *.svg text
 *.java text
 *.properties text
+
+### These extentions are for binary files
 *.jpg binary
 *.png binary
 *.gif binary
