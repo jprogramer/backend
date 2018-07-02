@@ -1,6 +1,7 @@
 ### Generated folders
 out
 target
+classes
 
 ### Eclipse files
 .classpath
