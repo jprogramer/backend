@@ -18,8 +18,13 @@
 
     <groupId>com.jsoftware95</groupId>
     <artifactId>jax-rs-sandbox</artifactId>
-	<packaging>war</packaging>
+    <packaging>war</packaging>
     <version>1.0</version>
+    <name>JAX RS Sandbox</name>
+
+    <build>
+        <finalName>jax-rs-sandbox</finalName>
+    </build>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
