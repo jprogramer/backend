@@ -22,10 +22,6 @@
     <version>1.0</version>
     <name>JAX RS Sandbox</name>
 
-    <build>
-        <finalName>jax-rs-sandbox</finalName>
-    </build>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -43,10 +39,12 @@
 
     <profiles>
         <profile>
-            <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
-            <!-- Use this profile for any OpenShift specific customization your app will need. -->
-            <!-- By default that is to put the resulting archive into the 'deployments' folder. -->
-            <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
+            <id>idea</id>
+            <build>
+                <finalName>jax-rs-sandbox</finalName>
+            </build>
+        </profile>
+        <profile>
             <id>openshift</id>
             <build>
                 <finalName>SampleApp</finalName>
